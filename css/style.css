@@ -1,0 +1,51 @@
+/* CONFIG GERAL */
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.hide{
+	display: none;
+}
+/* CONFIG CONTEUDO */
+#list{
+	padding: 20px;
+	width: 300px;
+	margin: auto;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+	#list h1{
+		margin: 0 0 10px;
+		font-size: 20px;
+	}
+
+
+	.waiting{
+		font-size: 20px;
+		font-family: Arial;
+		color: #414141;
+		margin: auto;
+	}
+
+	dl{
+		margin: 0;
+		float: left;
+	}
+		dl dt,
+		dl dd{
+			float: left;
+		}
+		dl dd{
+			margin-left: 10px;
+		}
