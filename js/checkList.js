@@ -1,5 +1,5 @@
-var scup = {
-	// function for get parameter
+var listContact = {
+	// function for get parameter / resultCall
 	// @name: qual é o parametro da url
 	// @success: callback success
 	// @error: callback error
@@ -29,7 +29,7 @@ var scup = {
 	// call json
 	callInfo : function ( ) {
 		// Do verification if call URL success or error
-		var paramiter = scup.getParameterByName('resultCall');
+		var paramiter = listContact.getParameterByName('resultCall');
 		var urlCall;
 
 		if( paramiter === "success"){
@@ -52,11 +52,11 @@ var scup = {
 						}
 					});
 					// check position
-					var checkName = position.sort(scup.checkResponse('name', true, function(a){
+					var checkName = position.sort(listContact.checkResponse('name', true, function(a){
 						return a.toUpperCase();
 					}));
 
-					scup.listNames(checkName, result);
+					listContact.listNames(checkName, result);
 				} else {
 					$('span.waiting').html(result.error);
 				}
@@ -97,7 +97,7 @@ var scup = {
 
 }
 
-scup.init = function () {
-	scup.getParameterByName('resultCall');
-	scup.callInfo('div#list');
+listContact.init = function () {
+	listContact.getParameterByName('resultCall');
+	listContact.callInfo('div#list');
 }();
