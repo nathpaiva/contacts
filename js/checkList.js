@@ -33,7 +33,7 @@ var listContact = {
 		var urlCall;
 
 		if( paramiter === "success"){
-			urlCall = "/js/json/success.json";
+			urlCall = "js/json/success.json";
 		} else {
 			urlCall = "js/json/error.json";
 		}
