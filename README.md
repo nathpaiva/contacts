@@ -21,3 +21,5 @@ http-server
 ### Developed by:
 
 NathPaiva
+
+**Free Software, Hell Yeah!**
